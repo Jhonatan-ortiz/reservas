@@ -10,7 +10,7 @@ class resepcion extends CI_Model
 
   }
   public function insertar ($datos){
-    return $this->db->insert("resepsion",$datos);
+    return $this->db->insert("resepcion",$datos);
   }
   public function obtenerTodos(){
       $resepcion=$this->db->get("resepcion");

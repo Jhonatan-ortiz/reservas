@@ -30,8 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			"precio_res"=>$this->input->post('precio_res')
 
 		);
-		print_r($datosNuevoCliente);
-		if($this->resepcion->insertar($datosNuevaResepcion)){
+		print_r($datosNuevoResepcion);
+		if($this->resepcion->insertar($datosNuevoResepcion)){
 			redirect('resepciones/index');
 		}else{
 			echo "<h1>error</h1>";

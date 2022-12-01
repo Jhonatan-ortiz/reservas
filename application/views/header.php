@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Matriculas</title>
+    <title>Hoteles</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
@@ -41,33 +41,68 @@
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
             <li><a href="<?php echo site_url(''); ?>">LINK</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LINK<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TIPO DE RESERVA<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo site_url(''); ?>">Listado</a></li>
-                <li><a href="<?php echo site_url(''); ?>">Nuevo</a></li>
+                <li><a href="<?php echo site_url('tipos/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('tipos/nuevo'); ?>">Nuevo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">S DE A<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('servicios/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('servicios/nuevo'); ?>">Nuevo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PISOS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('pisos/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('pisos/nuevo'); ?>">Nuevo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HABITACIONES<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('habitaciones/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('habitaciones/nuevo'); ?>">Nuevo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTOS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('productos/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('productos/nuevo'); ?>">Nuevo</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIAS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('categorias/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('categorias/nuevo'); ?>">Nuevo</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LINK <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EMPLEADOS <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo site_url(''); ?>">Listado</a></li>
-                <li><a href="<?php echo site_url(''); ?>">Nuevo</a></li>
+                <li><a href="<?php echo site_url('empleados/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('empleados/nuevo'); ?>">Nuevo</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LINK <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESEPCIONES<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo site_url(''); ?>">Listado</a></li>
-                <li><a href="<?php echo site_url(''); ?>">Nuevo</a></li>
+                <li><a href="<?php echo site_url('resepciones/index'); ?>">Listado</a></li>
+                <li><a href="<?php echo site_url('resepciones/nuevo'); ?>">Nuevo</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLIENTES<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="<?php echo site_url('clientes/index'); ?>">Listado</a></li>
-                <li><a href="<?php echo site_url(''); ?>">Nuevo</a></li>
+                <li><a href="<?php echo site_url('clientes/nuevo'); ?>">Nuevo</a></li>
                 <!-- <li><a href="<?php echo site_url(''); ?>">s</a></li>
                 <li><a href="<?php echo site_url(''); ?>">a</a></li> -->
 
